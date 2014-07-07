@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <body>
+  <img alt="Map" border="0" src="./result.png" style="position:absolute;top:0;left:0"/>
+  <div id="legend" style="position:absolute;top:900px">
+   <ul>
+    <li>
+     38:6C:1C:CD:18:8D
+     <img src="./red dot.png"/>
+    </li>
+   </ul>
+  </div>
+  <div id="images">
+   <img class="latest" id="38:6C:1C:CD:18:8D" src="./red.gif" style="position:absolute;top:178.0008903px;left:549.999619228px;z-index:10;" title="599.999599365,180.001001618"/>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.9.1.js">
+  </script>
+  <script>
+   window.onload = function(){
+        $( "img.latest" ).change(function() {
+            var $input = $( this );
+            var old = $input.position();
+            var position =$input.prop('title').split(",");
+            $input.animate({
+                left: position[0],
+                top: position[1]
+              }, 1500, function(){
+                if(position[2]){
+                    var html = position[2]+' style=\'position:absolute;top:'+(old.top+88)+'px;left:'+(old.left+88)+'px;z-index:10;\'/>';
+                    document.getElementById('images').innerHTML += html
+                }
+              });
+          })
+          .change();
+    };
+  </script>
+ </body>
+</html>

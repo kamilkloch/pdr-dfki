@@ -1,0 +1,48 @@
+{
+	"Filepath": "dfki-2.png",
+	"Points":[
+        {
+            "GPS":{
+                "latitude":  49.42890,
+                "longitude": 7.75070
+            },
+            "Pixel world":{
+                "x": 10,
+                "y": 19
+            }
+        },
+        {
+            "GPS":{
+                "latitude": 49.42979,
+                "longitude": 7.75138
+            },
+            "Pixel world":{
+                "x": 1196,
+                "y": 18
+            }
+        }
+    ],
+	"Beacons":[
+    {
+    	"Name" : "Beacon 01",
+    	"Pixel world":{
+				"x": 200,
+				"y": 120
+			}
+    },
+    {
+    	"Name" : "Beacon 02",
+    	"Pixel world":{
+				"x": 600,
+				"y": 150
+			}
+    },
+		{
+    	"Name" : "Beacon 03",
+    	"Pixel world":{
+				"x": 1000,
+				"y": 170
+			}
+    }
+	]
+}

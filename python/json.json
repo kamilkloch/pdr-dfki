@@ -1,0 +1,25 @@
+{
+	"Filepath": "dfki-2.png",
+	"Points":[
+		{
+			"GPS":{
+				"latitude":  49.42890,
+				"longitude": 7.75070
+			},
+			"Pixel world":{
+				"x": 35,
+				"y": 63
+			}
+		},
+		{
+			"GPS":{
+				"latitude": 49.42979,
+				"longitude": 7.75138
+			},
+			"Pixel world":{
+				"x": 4016,
+				"y": 62
+			}
+		}
+	]
+}
